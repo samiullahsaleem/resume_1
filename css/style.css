@@ -1,6 +1,7 @@
 body {
    margin: 0;
    padding: 0;
+   background-color:black;
 }
 
 .em-text {
@@ -11,17 +12,18 @@ body {
 	width: 60%;
 	height: 100%;
 }
-.col-md-6 {
-	padding-top: 60px;
-
-} 
+.white-text{
+	color:white;
+}
 
 
 #Skills {
 }
 
 h6{
-	text-align: center;
+	margin-left:0px;
+	margin-right:0px;
+	display:block;
 }
 
 .skills-h1 {
@@ -40,7 +42,11 @@ h6{
 	
 	text-align: center;
 }
-
+.card {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+}
 
 
 footer p {
@@ -88,8 +94,3 @@ input[type=submit]:hover {
 }
 
 /* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
