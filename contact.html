@@ -54,9 +54,10 @@
 
     <label for="fname" class="white-text">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
     <label for="lname" class="white-text">Last Name</label>
     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="email" class="white-text">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your email address">
     <label for="subject" class="white-text">Subject</label>
     <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
     <br>
@@ -96,7 +97,8 @@
 		{
 		firstName = document.getElementById('fname').value;
 		lastName = document.getElementById('lname').value;
-		Message = document.getElementById('subject').value;				
+		Message = document.getElementById('subject').value;
+		email = document.getElementById('email').value;
 		}
 		
 		function sent()
@@ -105,6 +107,7 @@
 			firebase.database().ref('clients/'+ firstName).set({
 			FirstName: firstName,
 			LastName: lastName,
+			Email: email,
 			Message: Message
 			});
 			header = document.getElementById('message'); 
